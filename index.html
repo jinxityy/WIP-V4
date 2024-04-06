@@ -1,143 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
 <title>Grades & Attendence</title>
 <link rel="icon" type="image/x-icon" href="images/favicon.png">
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<style>
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-</style>
-
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #222; /* Dark gray background color */
-    color: #fff; /* White text color */
-    margin: 0;
-    padding: 0;
-  }
-  h1, h2 {
-    text-align: center;
-    color: #fff;
-  }
-  .search-container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  #searchInput {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: black; /* Set background color to black */
-    color: white; /* Set text color to white */
-    font-size: 16px;
-    width: 300px;
-    outline: none;
-  }
-  .button-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
-    justify-content: center;
-        text-decoration: none;
-  }
-  .button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 15px 20px; /* Enlarge the padding */
-    background-color: #444; /* Darker gray button color */
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    max-width: 200px;
-    width: 100%; /* Make button width 100% */
-  }
-  .button:hover {
-    background-color: #333; /* Even darker gray on hover */
-        text-decoration: none;
-  }
-  .button img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    text-decoration: none;
-  }
-  .button  {
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-  }
-  .button-container1 {
-    display: flex;
-    justify-content: center; /* Distribute the buttons evenly along the container */
-    margin-top: 20px; /* Add margin to separate from other elements */
-}
-  .button {
-  position: relative;
-}
-
-.ribbon {
-  width: 60px;
-  font-size: 14px;
-  padding: 4px;
-  position: absolute;
-  left: -25px; /* Adjust the distance from the left */
-  top: -12px;
-  text-align: center;
-  border-radius: 25px;
-  transform: rotate(-20deg);
-  background-color: blue; /* Change the background color as needed */
-  color: white;
-}
-
-
-
-</style>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
+
 <body>
-    
 <div class="container">
-    <h1>Proll's Games V2</h1>
-    <div class="search-container">
-        <input type="text" style="color:white" id="searchInput" onkeyup="searchButtons()" placeholder="Search for games...">
-    </div>
-    <div class="button-container1">
-        <button class="button"><a style="text-decoration:none" href="https://tinyurl.com/45j4r62u">Game Request Form</a></button>
-        <button class="button"><a style="text-decoration:none" href="https://proll.dev/school/changelog">Changelog / Updates</a></button>
-    </div>
-    <div class="button-container">
+<h1>Proll's Games V2</h1>
+
+<div class="search-container">
+<input type="text" style="color:white" id="searchInput" onkeyup="searchButtons()" placeholder="Search for games...">
+</div>
+
+<div class="button-container1">
+<button class="button"><a style="text-decoration:none" href="https://tinyurl.com/45j4r62u">Game Request Form</a></button>
+<button class="button"><a style="text-decoration:none" href="https://proll.dev/school/changelog">Changelog / Updates</a></button>
+</div>
+
+<div class="button-container">
 <button class="button"><a style="text-decoration:none" href='https://glcdn.githack.com/3kh0/3kh0-assets/-/raw/main/1v1lol/index.html'><img src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="1v1.lol"> <span>1v1.lol</span></a><div class="ribbon">Fixed</div></button>
 <button class="button"><a style="text-decoration:none" href='games/slope'><img src="images/slope.png" alt="Slope"> <span>Slope</span></a></button>
-<button class="button"><a style="text-decoration:none" href='https://rawcdn.githack.com/Prollhouse2/gamesite/ba662482cd9499d51ace9997d066192860e18be7/games/retrobowl/index.html'><img src="images/retrobowl.jpg" alt="Retro Bowl"> <span>Retro Bowl</span></a></button>
+<button class="button"><a style="text-decoration:none" href='games/retrobowl'><img src="images/retrobowl.jpg" alt="Retro Bowl"> <span>Retro Bowl</span></a></button>
 <button class="button"><a style="text-decoration:none" href='games/basketballstars'><img src="images/basketballstars.png" alt="Basketball Stars"> <span>Basketball Stars</span></a></button>
 <button class="button"><a style="text-decoration:none" href='games/dbz'><img src="images/dbz.png" alt=""> <span>DBZ Devolution</span></a></button>
 <button class="button"><a style="text-decoration:none" href='games/drivemad'><img src="images/drivemad.png" width="200" height="200" alt=""> <br>Drive Mad</a></button>
@@ -166,8 +52,7 @@ a:active {
 <button class="button"><a style="text-decoration:none" href='games/ducklife1'><img src="images/ducklife1.png" width="200" height="200" alt=""> <br>Duck Life 1</a></button>
 <button class="button"><a style="text-decoration:none" href='games/sandboxels'><img src="https://sandboxels.r74n.com/icons/icon.png" width="200" height="200" alt=""> <br>Sand Boxels</a></button>
 </div>
-
-
+</body>
   <script>
     function searchButtons() {
         // Get the search query from the input field
@@ -187,5 +72,4 @@ a:active {
         }
     }
   </script>
-</body>
 </html>
